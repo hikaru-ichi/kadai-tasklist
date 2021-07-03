@@ -1,0 +1,5 @@
+    <% if tasks.any? %>
+      <% tasls.each do |task| %>
+        <li><%= link_to task.id, task %> : <%= task.status %> &gt; <%= task.content %> </li>
+      <% end %>
+    <% end %>
