@@ -1,12 +1,11 @@
-<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-  <header class="mb-4">
-    <nav class="navbar navbar-expand-sm navbaar-dark bg-dark">
-      <div class="container-fluid ps-5 pe-5">
-        <a class="navbar-brand" href="/">Tasklist</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
+<header class="mb-4">
+  <nav class="navbar navbar-expand-sm navbaar-dark bg-dark">
+    <div class="container-fluid ps-5 pe-5">
+      <a class="navbar-brand" href="/">Tasklist</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
     <% if logged_in? %>
       <div class="btn-group">
         <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><%= current_user.name %></button>
@@ -21,7 +20,7 @@
         <li class="nav-item"><%= link_to 'Login', login_path, class:'nav-link' %></li>
       </ul>
     <% end %>
-    
+
     </nav>
   </header>
 </div>
