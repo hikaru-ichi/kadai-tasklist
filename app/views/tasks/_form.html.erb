@@ -5,13 +5,12 @@
         <li><%= msg %></li>
       <% end %>
     </ul>
-  </div
-
-  <%= f.label :content, 'タスク' %>
-  <%= f.text_field :content %>
-  
-  <%= f.label :status, 'ステータス' %>
-  <%= f.text_field :status %>
-  
-  <%=f.submit '投稿' %>
+  </div>
+  <div>
+    <%= f.label :content, 'タスク' %>
+    <%= f.text_field :content %>
+    <%= f.label :status, 'ステータス' %>
+    <%= f.text_field :status %>
+  </div>
+    <%=f.submit '投稿' %>
 <% end %>
